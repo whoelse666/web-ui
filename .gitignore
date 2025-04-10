@@ -164,8 +164,9 @@ cython_debug/
 #  option (not recommended) you can uncomment the following to ignore the entire idea folder.
 .idea/
 temp
-tmp
-
+tmp/*
+# 反向排除 
+!tmp/webui_settings/
 
 .DS_Store
 
