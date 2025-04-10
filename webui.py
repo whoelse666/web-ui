@@ -825,7 +825,7 @@ def create_ui(theme_name="Ocean"):
                     with gr.Column():
                         use_vision = gr.Checkbox(
                             label="Use Vision",
-                            value=True,
+                            value=False,
                             info="Enable visual processing capabilities",
                             interactive=True
                         )
@@ -850,14 +850,14 @@ def create_ui(theme_name="Ocean"):
                     llm_provider = gr.Dropdown(
                         choices=[provider for provider, model in utils.model_names.items()],
                         label="LLM Provider",
-                        value="openai",
+                        value="deepseek",
                         info="Select your preferred language model provider",
                         interactive=True
                     )
                     llm_model_name = gr.Dropdown(
                         label="Model Name",
-                        choices=utils.model_names['openai'],
-                        value="gpt-4o",
+                        choices=utils.model_names['deepseek'],
+                        value="deepseek-chat",
                         interactive=True,
                         allow_custom_value=True,  # Allow users to input custom model names
                         info="Select a model in the dropdown options or directly type a custom model name"
@@ -884,7 +884,7 @@ def create_ui(theme_name="Ocean"):
                     with gr.Row():
                         llm_base_url = gr.Textbox(
                             label="Base URL",
-                            value="",
+                            value="https://api.deepseek.com",
                             info="API endpoint URL (if required)"
                         )
                         llm_api_key = gr.Textbox(
