@@ -1,6 +1,8 @@
 <img src="./assets/web-ui.png" alt="Browser Use Web UI" width="full"/>
 
 <br/>
+[使用参考文档](https://juejin.cn/post/7457565532625321995#heading-1)
+<br/>
 
 [![GitHub stars](https://img.shields.io/github/stars/browser-use/web-ui?style=social)](https://github.com/browser-use/web-ui/stargazers)
 [![Discord](https://img.shields.io/discord/1303749220842340412?color=7289DA&label=Discord&logo=discord&logoColor=white)](https://link.browser-use.com/discord)
